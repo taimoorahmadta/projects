@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    min-width: 400px;
+}
+
+#input-el {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    border: 2px solid green;
+    padding: 4px 10px;
+    font-size: 20px;
+}
+
+.btn {
+    width: auto;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #5f9341;
+    border: none;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #59b624;
+    border: 2px solid black;
+}
+
+ol {
+    text-align: left;
+    margin: 20px;
+}
+
+a {
+    color: #5f9341;
+}

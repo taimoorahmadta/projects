@@ -1,0 +1,277 @@
+* {
+    /* border: 2px solid black; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --button-color: rgb(171, 250, 82);
+    --ghost-border: 0px 0px 8px 2px white, inset 0px 0px 8px 4px white;
+    --back-transparent: rgba(208, 214, 211, 0.486);
+    --front-transparent: rgba(185, 187, 186, 0.8);
+}
+
+@keyframes wiggle {
+    0% {
+        left: 0px;
+    }
+
+    25% {
+        left: 1px;
+    }
+
+    50% {
+        left: 0px;
+    }
+
+    75% {
+        left: -1px;
+    }
+
+    100% {
+        left: 0px;
+    }
+
+    /* .box:hover{
+        animation: wiggle .2s  2 ;
+    } */
+}
+
+header::before {
+    background: url(#.jpg) no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .5;
+}
+
+.divider{
+    width: 80vw;
+    margin: auto;
+    box-shadow: var(--ghost-border);
+}
+
+
+
+::-webkit-scrollbar {
+    background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #5a5a5a;
+    border-radius: 10px;
+}
+
+body {
+    background-color: #5a5a5a;
+}
+
+.chat {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    width: auto;
+    height: auto;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: var(--back-transparent);
+    box-shadow: var(--ghost-border);
+}
+
+.chat .formgroup input {
+    display: block;
+    text-align: center;
+    width: 200px;
+    margin: 3px auto;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: var(--front-transparent);
+    font-size: 18px;
+}
+
+.chat .formgroup textarea {
+    display: block;
+    text-align: center;
+    width: 200px;
+    resize: vertical;
+    max-height: 200px;
+    margin: 3px auto;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 18px;
+    background-color: var(--front-transparent);
+}
+
+.chat .formgroup .btn {
+    width: 100px;
+    background-color: var(--button-color);
+    margin: 3px;
+    border-radius: 5px;
+
+}
+
+.chat .formgroup .btn:hover {
+    position: relative;
+    animation: wiggle .1s 2;
+}
+
+
+
+.navbar {
+    background-color: var(--back-transparent);
+    /* background-color: transparent; */
+    overflow: auto;
+    border-radius: 10px;
+}
+
+.navbar li {
+    float: left;
+    list-style: none;
+    margin: 20px 20px;
+    background-color: var(--front-transparent);
+    padding: 10px;
+
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar li:hover {
+    color: #ff0000;
+    box-shadow: var(--ghost-border);
+}
+
+
+.section-1 {
+    margin: 10px auto;
+    width: auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section-1 .image-div {
+    float: right;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.section-1 .image-div:hover {
+    transform: scale(1.1);
+}
+
+.section-1 .image-div #dp {
+    /* this is the older one so use this for sponge bob */
+    /* width: auto;
+    height: 100%; */
+    width: 110%;
+    height: 110%;
+}
+
+.section-1 .details {
+    float: left;
+    width: 50vw;
+    height: 150px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-style: dashed;
+    border-width: 2px;
+}
+
+.section-1 .details #name {
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: auto;
+    margin: 10px;
+
+}
+
+.section-1 .details #bio {
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.section-1 .details #socials {
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 80%;
+}
+
+.section-1 .details #socials a {
+    width: fit-content;
+    margin: auto;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(171, 250, 82);
+    border-radius: 4px;
+    padding: 4px;
+    font-family: "Poppins", sans-serif;
+}
+
+.section-1 .details #socials a:hover {
+    transform: scale(1.2);
+    position: relative;
+    animation: wiggle .15s 2;
+}
+
+
+
+.section-2 {
+    margin: 10px auto;
+    width: 80%;
+    text-align: center;
+}
+
+.section-2 .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.section-2 .container .box {
+    margin: 4px;
+    width: 30%;
+    max-height: 190px;
+    overflow: hidden;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.section-2 .container .box:hover {
+    transform: scale(1.2);
+}
+
+.section-2 .container .last {
+    align-self: flex-end;
+}
+

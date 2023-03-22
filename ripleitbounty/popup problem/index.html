@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artist Royalties Calculator</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<!-- <body onload="hidePopups()"> -->
+<body>  
+  <div class="container">
+    <div class="widget">
+      <h1>Artist Royalties Calculator</h1>
+
+      <div class="slider-container">
+        <label class="slider-label" for="audience-size">
+          Audience Size: <span id="audience-size-value">1,000</span>
+          <span class="help-icon" data-popup="popup-1">
+            ?
+            <span class="popup" id="popup-1">This slider represents the total size of the audience.</span>
+          </span>
+        </label>
+        <input type="range" min="1" max="10000" value="1000" class="slider" id="audience-size">
+      </div>
+
+      <div class="slider-container">
+        <label class="slider-label" for="premium-ratio">
+          Premium Ratio: <span id="premium-ratio-value">50%</span>
+          <span class="help-icon" data-popup="popup-2">
+            ?
+            <span class="popup" id="popup-2">This slider represents the percentage of the premium audience.</span>
+          </span>
+        </label>
+        <input type="range" min="0" max="100" value="50" class="slider" id="premium-ratio">
+      </div>
+
+      <div class="slider-container">
+        <label class="slider-label" for="fan-engagement">
+          Fan Engagement: <span id="fan-engagement-value">75%</span>
+          <span class="help-icon" data-popup="popup-3">
+            ?
+            <span class="popup" id="popup-3">This slider represents the percentage of fan engagement.</span>
+          </span>
+        </label>
+        <input type="range" min="0" max="100" value="75" class="slider" id="fan-engagement">
+      </div>
+
+      <h2>Total Royalties: <span id="total-royalties">$0.00</span></h2>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

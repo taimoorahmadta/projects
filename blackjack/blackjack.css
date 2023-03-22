@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    background-color: rgb(0, 255, 170);
+
+}
+
+h1 {
+    color: gold;
+    font-size: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.para {
+    margin: 20px;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-weight: bold;
+}
+
+.btn {
+    width: 200px;
+    height: 60px;
+    font-size: 25px;
+    font-weight: bold;
+    color: gold;
+    background-color: rgb(0, 255, 170);
+    border-radius: 20px;
+}
+
+.btn:hover {
+    background-color: gold;
+    color: rgb(0, 255, 170);
+}
+
+#player-el{
+    color: rgb(51, 43, 43);
+    font-weight: normal;
+}

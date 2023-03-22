@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "version": "1.1",
+    "name": "Second Brain",
+    "action": {
+        "default_popup": "secondbrain.html",
+        "default_icon": "gymlogo.png"
+    }, 
+    "permissions": [
+        "tabs"
+    ]
+}

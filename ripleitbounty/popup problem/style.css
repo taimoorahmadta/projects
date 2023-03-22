@@ -1,0 +1,130 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #484848;
+    margin: 0;
+    padding: 0;
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.widget {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.slider-container {
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.slider {
+    width: 100%;
+}
+
+.slider-label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.slider-label span:first-child {
+    display: flex;
+    align-items: center;
+}
+
+.help-icon {
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #FF5A5F;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 50%;
+    line-height: 1;
+    text-align: center;
+}
+
+.popup {
+    display: none; 
+    visibility: hidden; /* hide the popup when not hovering */
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 12px;
+    max-width: 200px;
+    z-index: 1;
+
+  /* correct positioning*/
+    left: 50%;
+    top: -470%; 
+    transform: translateX(-50%);
+  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.help-icon:hover .popup {
+visibility: visible; /* show the popup when not hovering */
+display: block;
+}
+
+.popup::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: #ccc transparent transparent transparent;
+}
+
+.popup.show {
+display: block;
+}
