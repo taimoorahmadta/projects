@@ -1,0 +1,97 @@
+  @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Roboto+Mono:wght@100&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Open+Sans:wght@300&family=Roboto+Condensed:wght@300&family=Roboto+Mono:wght@100&display=swap');
+
+  * {
+      /* border: 1px solid black; */
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+  }
+
+  main {
+      background-color: azure;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .ourreviews {
+      margin-bottom: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      border: none;
+      border-bottom: 2px solid aqua;
+  }
+
+
+  .container {
+      height: 400px;
+      width: 400px;
+      border-radius: 8%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+      background-color: white;
+      font-family: 'Delicious Handrawn', cursive;
+      font-size: 20px;
+
+      box-shadow: 0px 0px 15px 0px black;
+
+  }
+
+
+  .imgdiv {
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      overflow: hidden;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid;
+  }
+
+  .imgdiv img {
+      width: auto;
+      height: 100%;
+  }
+
+
+
+  p#name-el {
+      margin: 10px;
+      letter-spacing: 4px;
+  }
+
+  p#headline-el {
+      margin-bottom: 10px;
+      color: aqua;
+  }
+
+  p#about-el {
+      margin: 10px;
+      color: hsl(211, 39%, 23%);
+  }
+
+  #controls {
+      display: flex;
+      flex-direction: row;
+  }
+
+  #controls .btn {
+      font-size: 30px;
+      margin-left: 10px;
+      margin-right: 10px;
+      border: none;
+      padding: 20px;
+      background-color: transparent;
+  }
+
+  #controls .btn:hover {
+      color: aqua;
+  }

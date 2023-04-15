@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+/* Header */
+header{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    font-family: 'Fuzzy Bubbles', cursive;
+    border-bottom: 1px solid black;
+}
+ul{
+    list-style-type: none;
+    overflow: hidden;
+    width: 100%;
+    background-color: azure;
+}
+li{
+    float: left;
+    margin: 10px;
+}
+a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.2s ease 0s;
+}
+li a:hover{
+    color: black;
+    background-color: rgb(37, 230, 230);
+}
+
+/* body */
+.container{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ background-color: gold;
+ height: 100vh;
+}
+.container p{
+    background-color: rgb(46, 45, 45);
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+.container button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 30px;
+    margin: 40px;
+    transition:  background-color 0.6s ease 0s, color 0.6s ease 0s ;
+    border: 1px solid black;
+
+}
+.container button:hover{
+    cursor: pointer;
+    background-color: rgb(46, 45, 45);
+    color: white;
+}

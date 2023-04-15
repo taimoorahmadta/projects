@@ -6,7 +6,8 @@
 }
 
 :root {
-    --button-color: rgb(171, 250, 82);
+    /* --button-color: rgb(171, 250, 82); */
+    --button-color: #0C8990; 
     --ghost-border: 0px 0px 8px 2px white, inset 0px 0px 8px 4px white;
     --back-transparent: rgba(208, 214, 211, 0.486);
     --front-transparent: rgba(185, 187, 186, 0.8);
@@ -231,7 +232,7 @@ body {
     margin: auto;
     text-decoration: none;
     color: black;
-    background-color: rgb(171, 250, 82);
+    background-color: var(--button-color);
     border-radius: 4px;
     padding: 4px;
     font-family: "Poppins", sans-serif;
@@ -275,3 +276,6 @@ body {
     align-self: flex-end;
 }
 
+footer{
+    text-align: center;
+}

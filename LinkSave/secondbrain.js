@@ -1,7 +1,5 @@
 /* Initialising */
 let myleads = [];
-let oldleads = ["www.apple.com", "www.taimoor.com", "www.humane.com"];
-
 
 /* Elements */
 const inputel = document.getElementById("input-el");
@@ -41,7 +39,11 @@ deletebtn.addEventListener("dblclick", function handleDelete() {
 
 /* Save lead to localstorage and render it in the list */
 inputbtn.addEventListener('click', function handlesave() {
-    myleads.push(inputel.value);
+
+    //if input element empty don't pass anything
+    if(inputel.value != ""){
+        myleads.push(inputel.value);
+    }
     inputel.value = "";
     localStorage.setItem("myleads", JSON.stringify(myleads))
     render(myleads);
@@ -51,7 +53,8 @@ inputbtn.addEventListener('click', function handlesave() {
 tabbtn.addEventListener('click', function tabsave() {
     //fetch the current active tab url
     chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
-        myleads.push(tabs[0].url);
+        myleads.push(tabs[0].url);  //this gets url
+        // myleads.push(tabs[0].title);  //this gets title of tab
         localStorage.setItem("myleads",JSON.stringify(myleads))
         render(myleads);
     });
